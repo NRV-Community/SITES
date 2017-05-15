@@ -1,0 +1,6 @@
+Options +FollowSymlinks -MultiViews
+RewriteEngine On
+RewriteRule ^Accueil$ index.html [L]
+RewriteRule ^Formations$ formations.html [L]
+RewriteRule ^Reseau$ reseau.html [L]
+RewriteRule ^Produits$ produits.html [L]

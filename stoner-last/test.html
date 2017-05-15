@@ -1,0 +1,167 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>.hamburger-menu {
+	width: 100%;
+	text-align: center;
+	margin: auto;
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+
+    padding-left:0px;
+    padding-right:0px;
+        float: left;
+    padding-left: 20px;
+}
+
+.bar,
+.bar:after,
+.bar:before {
+	width: 50px;
+	height: 6px;
+}
+
+.bar {
+	position: relative;
+	transform: translateY(25px);
+	background: white;
+	transition: all 0ms 300ms;
+}
+
+.bar.animate {
+	background: rgba(255, 255, 255, 0);
+}
+
+.bar:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 12px;
+	background: white;
+	transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.bar:after {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 12px;
+	background: white;
+	transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+    
+
+.bar.animate:after {
+	top: 0;
+	transform: rotate(45deg);
+	transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.bar.animate:before {
+	bottom: 0;
+	transform: rotate(-45deg);
+	transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+ul.mobilemenuul {
+	list-style-type: none;
+	width: 100%;
+	text-align: center;
+	min-wdith: 800px;
+}
+
+li.mobilemenuli {
+	width: 100%;
+	text-align: center;
+	color: black;
+	font-size: 2em;
+
+	padding: 20px;
+	color: white;
+}
+
+li.mobilemenuli.last {
+	width: 100%;
+	text-align: center;
+	color: black;
+	font-size: 2em;
+
+	padding: 20px;
+	color: white;
+    padding-bottom:40px;
+}
+
+.ulcontainer {
+	width: 100%;
+	background-color: #ef4523;
+	clear: both;
+}
+
+.menuu {
+	display: none;
+}
+
+.active {
+	display: block;
+}
+
+.toppp {
+    height:57px;
+}
+
+ul.mobilemenuul li.mobilemenuli:last {
+    padding-bottom: 40px;
+}
+
+.menu-mobile {
+    position:fixed;
+    top:0px;
+    width:100%;
+    text-align: center;
+    z-index:999;
+}
+</style>
+</head>
+
+<html>
+<body>
+    <div class="menu-mobile">
+        <div class="ulcontainer toppp">
+<div class="hamburger-menu">
+		  <div class="bar"></div>	
+</div>
+</div>
+ 
+  <div class="ulcontainer menuu">
+  <ul class="mobilemenuul">
+    <li class="mobilemenuli">ACCUEIL</li>
+    <li class="mobilemenuli">FORMATION</li>
+    <li class="mobilemenuli">RESEAU</li>
+    <li class="mobilemenuli last">PRODUITS</li>
+  </ul>
+  </div>
+  </div>
+    
+</body>
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script type="text/javascript">
+ 
+            (function () {
+	$('.hamburger-menu').on('click', function() {
+		$('.bar').toggleClass('animate');
+    $('.menuu').slideToggle().toggleClass("active");
+	})
+})();
+
+</script>
+
+
+</html>

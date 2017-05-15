@@ -1,0 +1,444 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    position: relative;
+
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+body.pageproduit {
+    height:100%;
+    max-height:100%;
+    height:100vh;
+    background-color:#f5f2ed;
+}
+
+#dentisterie {
+    width:100%;
+    margin:auto;
+    height:36%;
+    transition:0.35s;
+    z-index:1;
+    overflow:visible;
+}
+.dentisterie-left {
+    height: 100%;
+    float: left;
+    visibility: hidden;
+  opacity: 0.0;
+  position: relative;
+  left:-500px;
+
+    width:50%;
+}.dentisterie-right {
+    height: 100%;
+    float: right;
+
+    width:50%;
+}
+    .dentisterie-left img {
+    float: right;
+    padding-right: 19%;
+    height: 100%;
+    width: auto;
+        z-index:10;
+}
+
+
+
+.dentisterie-right-container {
+    width: 50%;
+    float: left;
+    margin-left: 15%;
+    height: 100px;
+    padding-top: 10%;
+    visibility: hidden;
+  opacity: 0.0;
+  position: relative;
+  right:-500px;
+}
+
+.overlaytoggled {
+    visibility: visible;
+    
+}
+.visible {
+    visibility: visible;
+    
+}
+
+.produits-container {
+    padding-top:7%;
+    height:100%;
+}
+
+.keepfaraway {
+    position:relative;
+    right:-500px;
+}
+
+
+
+#dentisterie h2 {
+    color:#FF0000;
+    font-family:'Raleway';
+    font-size:2.2em;
+    line-height:2.6em;
+    letter-spacing:4px;
+}
+
+#dentisterie p {
+    color:white;
+    font-family:'Raleway';
+}
+
+
+/*
+#dentisterie:hover > div.overlay:hover {
+    background:rgba(0,0,0,0.7);
+    transition:0.35s;
+}
+*/
+
+#dentisterie:after {
+    background-color:#f5f2ed;
+    transition:0.35s;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    z-index:9999;
+}
+
+.overlayhover {
+    background:rgba(0,0,0,0.7);
+    transition:0.35s;
+}
+
+.index {
+    z-index:99;
+}
+
+
+
+#laboratoire {
+    width:100%;
+    margin:auto;
+    height:36%;
+    transition:0.35s;
+    z-index:1;
+
+}
+.laboratoire-left {
+    height: 100%;
+    float: right;
+visibility: hidden;
+  opacity: 0.0;
+  position: relative;
+  right:-500px;
+    width:50%;
+}.laboratoire-right {
+    height: 100%;
+    float: left;
+    width:50%;
+     
+}
+    .laboratoire-left img {
+    float: left;
+    padding-left: 19%;
+    height: 100%;
+    width: auto;
+        z-index:10;
+}
+
+
+
+.laboratoire-right-container {
+    width: 50%;
+    float: right;
+    margin-right: 15%;
+    height: 100px;
+    padding-top: 10%;
+    visibility:hidden;
+  opacity: 0.0;
+  position: relative;
+  left:-500px;
+}
+#laboratoire h2 {
+    color:#FF0000;
+    font-family:'Raleway';
+    font-size:2.2em;
+    line-height:2.6em;
+    letter-spacing:4px;
+    
+}
+
+#laboratoire p {
+    color:white;
+    font-family:'Raleway';
+}
+#laboratoire:after {
+    background-color:#f5f2ed;
+    transition:0.35s;
+}
+
+.visible {
+    visibility: visible;
+    
+}
+
+.constrain {
+    position:relative;
+    left:-500px;
+}
+  .blur {
+-webkit-filter: blur(5px); /* Chrome, Safari, Opera */
+  filter: blur(5px);
+      
+}
+
+
+.mode {
+    width:100%;
+    margin:auto;
+    text-align: center;
+    display: inline-block;
+    height: 58px;
+    margin-top:2%;
+}
+
+.modeleft {
+    display: inline-block;
+    font-family:'Raleway';
+    text-transform: uppercase;
+    font-size:1.5em;
+    font-weight:lighter;
+    padding-right:30px;
+}
+.moderight {
+    display: inline-block;
+    font-family:'Raleway';
+    text-transform: uppercase;
+    font-size:1.5em;
+    font-weight:lighter;
+    padding-left:30px;
+}
+
+.modeimg {
+    width: 3%;
+    height: auto;
+    text-align: center;
+    display: inline-block;
+}
+
+.modeimg img {
+    width:100%;
+    height:auto;
+    text-align: center;
+}
+
+.mode p {
+    vertical-align:middle;
+    height:100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.nav.fixed{
+  position:fixed;
+  transition-property: margin-top,margin-right;
+  transition-duration: .5s,.1s;
+  transition-delay: 0;
+  transition-timing-function: cubic-bezier(0.22,0.99,0.62,1);
+  -moz-transition-property: margin-top,margin-right;
+  -moz-transition-duration: .5s,.1s;
+  -moz-transition-delay: 0;
+  -moz-transition-timing-function: cubic-bezier(0.22,0.99,0.62,1);
+  -o-transition-property: margin-top,margin-right;
+  -o-transition-duration: .5s,.1s;
+  -o-transition-delay: 0;
+  -o-transition-timing-function: cubic-bezier(0.22,0.99,0.62,1);
+  -ms-transition-property: margin-top,margin-right;
+  -ms-transition-duration: .5s,.1s;
+  -ms-transition-delay: 0;
+  -ms-transition-timing-function: cubic-bezier(0.22,0.99,0.62,1);
+  -webkit-transition-property: margin-top,margin-right;
+  -webkit-transition-duration: .5s,.1s;
+  -webkit-transition-delay: 0;
+  -webkit-transition-timing-function: cubic-bezier(0.22,0.99,0.62,1);
+ 
+  top:0;
+  z-index:1000;
+    
+
+}
+
+
+.centerthismenu {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    height: 100px;
+}
+
+.nav li:hover { 
+    color:#ff0000; transition: 0.3s 
+}
+
+
+.nav ul li.menutxt{
+    float:left;
+    list-style:none;
+    text-align:center;
+    line-height:80px;
+    padding:39px 32px 36px 32px;
+        
+}
+.nav ul li.menuimg{
+    float: left;
+    padding-left: 32px;
+    padding-right: 0px;
+}
+
+.nav ul li{
+    float:left;
+        
+}
+.nav ul li a{
+    line-height:40px;
+    display:block;
+    padding:0 10px;
+    text-transform: uppercase;
+    text-decoration:none;
+    color:#222;
+   font: 400 1.3em Raleway;
+}
+
+.nav ul {
+    text-align: center;
+    width: auto;
+    width: 800px;
+    margin: auto;
+}
+.nav{
+       background: rgba(0,0,0,0);
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    position:fixed;
+z-index:999;
+}
+
+/*
+.nav{
+    background:rgba(0,0,0,0);
+    height:100px;
+    width:100%;
+    text-align:center;
+    position:fixed;
+    z-index:999;
+    top:0px;
+    left:50%;
+    margin-left: -388px;
+}
+*/
+
+.nav li:hover { 
+    color:#ff0000; transition: 0.3s 
+}
+
+
+.nav ul li.menutxt{
+    float:left;
+    list-style:none;
+    text-align:center;
+    line-height:80px;
+    padding:39px 32px 36px 32px;
+        
+}
+.nav ul li.menuimg{
+    float: left;
+    padding-left: 32px;
+    padding-right: 0px;
+}
+
+.nav ul li{
+    float:left;
+        
+}
+.nav ul li a{
+    line-height:40px;
+    display:block;
+    padding:0 10px;
+    text-transform: uppercase;
+    text-decoration:none;
+    color:#222;
+   font: 400 1.3em Raleway;
+}
+.logo {
+vertical-align: middle;
+padding-top:25px;
+padding-right:32px;}

@@ -1,0 +1,19 @@
+body.pageproduit {
+    height:100%;
+    max-height:100%;
+    height:100vh;
+    background-color:red;
+}
+
+.dentisterie {
+    width:100%;
+    margin:auto;
+    height:30%;
+    min-height:300px;
+}
+.dentisterie-left {
+    height: 100%;
+    float: left;
+
+    width:50%;
+}
